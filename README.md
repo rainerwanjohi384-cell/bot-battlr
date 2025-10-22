@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Bot Battlr
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React app where you can see a list of bots, add bots to your army, and even delete them from the server.
 
-## Available Scripts
+## What the app does
 
-In the project directory, you can run:
+-Shows a list of robot cards with images and stats
 
-### `npm start`
+-Lets you add a bot to your army by clicking on it
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-Lets you remove a bot from your army by clicking it again
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-Lets you discharge (delete) a bot forever using the x red button
 
-### `npm test`
+-Makes sure a bot can only be added once
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to run the project
 
-### `npm run build`
+Follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Clone the project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Open your terminal and run:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+git clone https://github.com/rainerwanjohi384-cell/bot-battlr.git
 
-### `npm run eject`
+cd bot-battlr
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 2. Install the dependencies
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3. Start the backend (JSON server)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Make sure you're in the project folder, then run:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+json-server --watch db.json --port 8001
 
-## Learn More
+### 4. Start the React app
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+In a new terminal window, run:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm start
 
-### Code Splitting
+The app will open at: http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Backend
 
-### Analyzing the Bundle Size
+JSON Server will be running at:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+http://localhost:8001/bots
 
-### Making a Progressive Web App
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+-React (JavaScript library for building UI)
 
-### Advanced Configuration
+-JSON Server (for fake backend)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+-HTML & CSS
 
-### Deployment
+## Features Done
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+ -Show all bots
 
-### `npm run build` fails to minify
+ -Add bot to army
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ -Remove bot from army
+
+ -Discharge bot (delete from server)
+
+ -Prevent duplicate bots in army
+
+## For Grading
+
+GitHub repo is private 
+
+TM has been added as collaborator 
+
+All features are working 
+
+## Created by
+
+GitHub: @rainerwanjohi384-cell
